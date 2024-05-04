@@ -1,9 +1,11 @@
 <?php
 
+use App\Livewire\Cart;
 use App\Livewire\ShopPage;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', ShopPage::class)->name('shop');
+Route::get('/cart', Cart::class)->name('cart');
 
 Auth::routes();
 
