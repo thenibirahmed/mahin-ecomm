@@ -1,10 +1,9 @@
 <?php
 
+use App\Livewire\ShopPage;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ShopPage::class)->name('shop');
 
 Auth::routes();
 
